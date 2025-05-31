@@ -240,6 +240,7 @@ section {
 
                 & .information {
                     transition-delay: 0.9s;
+                    cursor: pointer;
                 }
             }
         }
