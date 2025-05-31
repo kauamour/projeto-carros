@@ -193,9 +193,9 @@ button:nth-child(1) {
 section {
 
     & .list {
-
+    --calculation: 1;
         & .item {
-            transform: translateX(100vw);
+            transform: translateX(calc(100vw * var(--calculation)));
             transition: 0.5s;
             opacity: 0;
 
@@ -212,7 +212,7 @@ section {
             & .content {
 
                 & .info-car, h2, .description, .information {
-                    transform: translateX(200px);
+                    transform: translateX(calc(200px * var(--calculation)));
                     transition: 0.7s;
                     transition-delay: 0.3s;
                     opacity: 0;
