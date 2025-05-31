@@ -76,7 +76,7 @@ section div.item {
 
             & img {
                 width: 100%;
-                transform: rotate(-20deg);
+                transform: rotate(-30deg);
             }
         }
 
@@ -215,6 +215,7 @@ section {
                     transform: translateX(200px);
                     transition: 0.7s;
                     transition-delay: 0.3s;
+                    opacity: 0;
                 }
 
                 & h2 {
@@ -235,8 +236,21 @@ section {
         transform: translateX(0);
         transition: 0.5s;
         opacity: 1;
-        }
-    }
 
-    
+        & .car-img {
+
+                & img {
+                    transform: rotate(-30deg);
+                }
+        }
+
+        & .content {
+
+                & .info-car, h2, .description, .information {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+        }
+    }   
 }
